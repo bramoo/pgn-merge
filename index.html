@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PGN Merge</title>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <h1>PGN Merge</h1>
+      <div class="card">
+        <textarea id="pgn" rows="10" placeholder="Pase PGN here"></textarea>
+        <button id="parse" type="button">Parse PGN</button>
+      </div>
+      <p>or</p>
+      <div class="card">
+        <input type="file" id="file" accept="text/plain,.txt,.pgn" />
+      </div>
+    </div>
+    <hr>
+    <div class="card">
+      <textarea id="output" rows="10" placeholder="Merged output will appear here"></textarea>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
